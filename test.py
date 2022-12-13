@@ -1,8 +1,8 @@
-# 2. Напишите программу, которая на вход принимает 5 чисел и находит максимальное из них.
+# 3. Напишите программу, которая будет на вход принимать
+#    число N и выводить числа от -N до N
 
-num_max = 0
-for i in range (5):
-   num = int(input())
-   if num_max < num:
-    num_max = num
-print (num_max)
+def range_numbers_n():
+    n = int(input("Input your number: "))
+    print(*range(-n, n + 1))
+
+range_numbers_n()
