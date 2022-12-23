@@ -20,8 +20,6 @@ def discr(a, b, c):
 
 discr (2, 3, 1)
 
-file.close()
-
 
 
 
