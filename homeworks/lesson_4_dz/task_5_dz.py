@@ -1,10 +1,9 @@
-
+# ** 5. Даны два файла, в каждом из которых находится запись многочленов. 
+#       Задача - сформировать файл, содержащий сумму многочленов.
 
 
 
 import random
-
-
 
 
 def write_file(name, st):
@@ -12,19 +11,13 @@ def write_file(name, st):
         data.write(st)
 
 
-
-
 def rnd():
     return random.randint(0, 101)
-
-
 
 
 def create_mn(k):
     lst = [rnd() for i in range(k+1)]
     return lst
-
-
 
 
 def create_str(sp):
@@ -50,7 +43,6 @@ def create_str(sp):
 
 
 
-
 def sq_mn(k):
     if 'x^' in k:
         i = k.find('^')
@@ -69,8 +61,6 @@ def k_mn(k):
         i = k.find('x')
         num = int(k[:i])
     return num
-
-
 
 
 def calc_mn(st):
@@ -97,7 +87,7 @@ def calc_mn(st):
     return lst
 
 
-# создание двух файлов
+
 k1 = int(input("Введите натуральную степень для первого файла k = "))
 k2 = int(input("Введите натуральную степень для второго файла k = "))
 koef1 = create_mn(k1)
@@ -105,7 +95,6 @@ koef2 = create_mn(k2)
 write_file("file_k_1.txt", create_str(koef1))
 write_file("file_k_2.txt", create_str(koef2))
 
-# нахождение суммы многочлена
 
 with open('file_k_1.txt', 'r') as data:
     st1 = data.readlines()
