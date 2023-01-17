@@ -27,3 +27,9 @@ a = Fill_list()
 print(a)
 print(Sort_list(a))
 
+
+#dz задача 2 "itertools groupby" - использовать (задача на реализацию RLE) 
+# from os import path - там же
+# if path.exists(name) - там же
+
+
